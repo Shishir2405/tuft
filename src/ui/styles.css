@@ -1,0 +1,212 @@
+:root {
+  --bg: #f4f1e8;
+  --ink: #1b2a20;
+  --muted: #4d5b51;
+  --accent: #1f3d2b;
+  --accent-ink: #f4f1e8;
+  --surface: #ffffff;
+  --line: #cfc9b8;
+  --good: #1d6b3a;
+  --warn: #8a5a00;
+  --bad: #9b2c2c;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121a15;
+    --ink: #eef0e6;
+    --muted: #aab5ac;
+    --accent: #9fd4ae;
+    --accent-ink: #102015;
+    --surface: #1b261f;
+    --line: #34443a;
+    --good: #8fd6a5;
+    --warn: #e6c36a;
+    --bad: #f2a0a0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    1.125rem/1.5 system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+}
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(2rem, env(safe-area-inset-bottom));
+  display: grid;
+  gap: 1.25rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0;
+}
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+.lede {
+  font-size: 1.25rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+.clue {
+  font-size: clamp(1.75rem, 7vw, 2.5rem);
+}
+button,
+.file-button,
+label.primary {
+  font: inherit;
+  font-weight: 600;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+  min-height: 5rem;
+  font-size: 1.5rem;
+}
+.secondary {
+  background: transparent;
+  color: var(--accent);
+}
+.link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  min-height: 2.75rem;
+  padding: 0;
+}
+.disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+:focus-visible {
+  outline: 3px solid var(--warn);
+  outline-offset: 3px;
+}
+.hunt-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.hunt {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+  text-align: left;
+  font-weight: 400;
+}
+.hunt-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.hunt-meta {
+  color: var(--muted);
+  font-size: 1rem;
+}
+.status {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.status p {
+  margin: 0 0 0.75rem;
+}
+.status.ok {
+  color: var(--good);
+  margin: 0;
+}
+progress {
+  width: 100%;
+  height: 1rem;
+}
+.actions {
+  display: grid;
+  gap: 0.75rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.hunt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+}
+.hunt-header p {
+  margin: 0;
+}
+.live {
+  min-height: 3.5rem;
+}
+.result {
+  font-weight: 600;
+  margin: 0;
+}
+.result.found {
+  color: var(--good);
+}
+.result.close {
+  color: var(--warn);
+}
+.result.miss {
+  color: var(--bad);
+}
+.result small {
+  font-weight: 400;
+  color: var(--muted);
+}
+.errors {
+  color: var(--bad);
+  padding-left: 1.25rem;
+}
+footer {
+  color: var(--muted);
+  font-size: 1rem;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: no-preference) {
+  button,
+  label {
+    transition: transform 0.1s ease;
+  }
+  button:active,
+  label.primary:active {
+    transform: scale(0.98);
+  }
+}
