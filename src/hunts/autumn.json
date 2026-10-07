@@ -1,0 +1,38 @@
+{
+  "id": "autumn-walk",
+  "title": "Autumn Walk",
+  "summary": "Seasonal finds for a longer wander through a park or woodland edge.",
+  "minutes": 25,
+  "targets": [
+    {
+      "id": "fallen-leaves",
+      "clue": "Crunch through a pile of fallen leaves, then photograph them on the ground.",
+      "label": "fallen autumn leaves on the ground",
+      "contrast": ["green grass", "a paved path"]
+    },
+    {
+      "id": "mushroom",
+      "clue": "Check the damp spots under trees. Photograph a mushroom. Do not eat it.",
+      "label": "a mushroom",
+      "contrast": ["a rock", "a pile of leaves"]
+    },
+    {
+      "id": "pine-cone",
+      "clue": "Find a pine cone or a conker lying under a tree and photograph it.",
+      "label": "a pine cone",
+      "contrast": ["an acorn", "a stone"]
+    },
+    {
+      "id": "squirrel",
+      "clue": "Look up and along the branches. Photograph a squirrel if one shows itself.",
+      "label": "a squirrel",
+      "contrast": ["a bird", "a cat"]
+    },
+    {
+      "id": "spider-web",
+      "clue": "Look for a spider web catching the light between plants, and photograph it.",
+      "label": "a spider web",
+      "contrast": ["a fence", "a power line"]
+    }
+  ]
+}

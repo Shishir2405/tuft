@@ -1,0 +1,38 @@
+{
+  "id": "neighbourhood-basics",
+  "title": "Neighbourhood Basics",
+  "summary": "Ten easy minutes around the block. No gear, no hiking boots.",
+  "minutes": 10,
+  "targets": [
+    {
+      "id": "tree-trunk",
+      "clue": "Find a tree. Put your hand on the bark, then take a photo of the trunk.",
+      "label": "a tree trunk",
+      "contrast": ["a wooden fence", "a lamp post"]
+    },
+    {
+      "id": "flower",
+      "clue": "Look low. Find a flower, wild or planted, and photograph it.",
+      "label": "a flower",
+      "contrast": ["a green bush", "a plastic toy"]
+    },
+    {
+      "id": "bird",
+      "clue": "Stand still for twenty seconds and listen. Photograph any bird you can see.",
+      "label": "a bird",
+      "contrast": ["a plane in the sky", "a leaf"]
+    },
+    {
+      "id": "sky",
+      "clue": "Look straight up. Photograph the clouds, or the empty sky if there are none.",
+      "label": "clouds in the sky",
+      "contrast": ["a ceiling", "a street light"]
+    },
+    {
+      "id": "dog",
+      "clue": "Say hello to a dog, with its owner's permission. Photograph the dog.",
+      "label": "a dog",
+      "contrast": ["a cat", "a statue"]
+    }
+  ]
+}
