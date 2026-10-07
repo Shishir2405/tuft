@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-e2e
+dev-dist
+.cache
+playwright-report
+test-results
+.env
+.env.local
+.DS_Store
+*.log
